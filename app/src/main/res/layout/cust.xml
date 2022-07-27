@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/cust"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/custom"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="100dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    android:textStyle="italic"
+    android:text="What do you want to do?"
+    android:textColor="@color/black"
+    />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/custom1"
+            android:backgroundTint="@color/teal_700"
+            android:text="Update" />
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/custom2"
+            android:backgroundTint="@color/teal_700"
+            android:text="Delete" />
+
+        <Button
+            android:id="@+id/custom3"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/teal_700"
+            android:text="Nothing"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

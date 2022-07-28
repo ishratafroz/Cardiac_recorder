@@ -14,16 +14,29 @@ public class CardiacArrayList {
         }
         cardiacs.add(c);
     }
-
+    /**
+     * sorting the list
+     * @return
+     */
     public List<cardiaclist>getCardiacs(){
         List<cardiaclist>  newcardiaclist=cardiacs;
         Collections.sort(newcardiaclist);
         return newcardiaclist;
     }
+
+    /**
+     *  return the list for unit testing purpose
+     * @param tmp
+     * @return
+     */
     public List<cardiaclist>getCardiacs(int tmp){
         List<cardiaclist>  newcardiaclist=cardiacs;
         return newcardiaclist;
     }
+    /**
+     * deletion checking and throw exception if null
+     * @param c
+     */
     public void delete(cardiaclist c){
         List<cardiaclist> newcardiaclist= cardiacs;
         if(newcardiaclist.contains(c)){
@@ -33,6 +46,12 @@ public class CardiacArrayList {
             throw new IllegalArgumentException();
         }
     }
+
+    /**
+     *  count the size
+     * @return
+     */
+
     public int count(){
         return cardiacs.size();
     }

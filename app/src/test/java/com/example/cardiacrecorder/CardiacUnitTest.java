@@ -14,11 +14,19 @@ public class CardiacUnitTest {
         return cardiacArrayList;
     }
 
+    /**
+     * taking user input
+     * @return
+     */
     private cardiaclist mockCardiac(){
         return new cardiaclist
                 ("120","80","60","normal","normal","Friday,8 July 2022","05:00 pm" );
 
     }
+
+    /**
+     * testing for add button
+     */
     @Test
     public void testAddCardiac(){
         CardiacArrayList cardiacArrayList=mockCardiacList();
@@ -32,6 +40,9 @@ public class CardiacUnitTest {
         assertTrue(cardiacArrayList.getCardiacs().contains(cardiaclist));
     }
 
+    /**
+     * exception handling
+     */
     @Test
     public void testAddException(){
         CardiacArrayList cardiacArrayList=new CardiacArrayList();
@@ -46,6 +57,9 @@ public class CardiacUnitTest {
         });
     }
 
+    /**
+     *  checking whether we are getting the list or not
+     */
     @Test
     public void testGetCardiacs(){
         CardiacArrayList cardiacArrayList=mockCardiacList();
@@ -63,7 +77,9 @@ public class CardiacUnitTest {
         assertEquals(0,mockCardiac().compareTo(cardiacArrayList.getCardiacs().get(0)));
         assertEquals(0,c2.compareTo(cardiacArrayList.getCardiacs().get(2)));
     }
-
+    /*
+    checking by deletion
+     */
     @Test
     public void testdelete(){
         CardiacArrayList cardiacArrayList=new CardiacArrayList();
@@ -79,6 +95,9 @@ public class CardiacUnitTest {
         assertTrue(!cardiacArrayList.getCardiacs().contains(c1));
     }
 
+    /**
+     *  exception handling by deletion
+     */
     @Test
     public void testDeleteException(){
         CardiacArrayList cardiacArrayList=new CardiacArrayList();
@@ -98,6 +117,9 @@ public class CardiacUnitTest {
         });
     }
 
+    /**
+     * list items size  checking
+     */
     @Test
     public void testcount(){
         CardiacArrayList cardiacArrayList=new CardiacArrayList();
